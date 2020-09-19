@@ -10,7 +10,9 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
+
 
 <body>
     <header class="text-center bg-dark">
@@ -41,10 +43,10 @@
 
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 card">
 
-                <h4 class="city mt-4 ml-3">
-                    Atlanta (9/17/2020) <i class="fas fa-cloud"></i>
+                <h4 class="city mt-4 ml-3" id="date">
+                    <i class="fas fa-cloud"></i>
                 </h4>
                 <p class="paragraph mt-3 ml-3">Temprature:</p>
                 <p class="paragraph ml-3">Humidity:</p>
@@ -60,7 +62,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-2">
-                <div id="eachDay" class="days">
+                <div id="eachDay" class="card day">
                     <h4 id="theDate"></h4>
                     <span id="theIcon"></span>
                     <p>Temp: <span id="theTemp"></span></p>
@@ -70,7 +72,7 @@
 
 
             <div class="col-md-2">
-                <div id="eachDay" class="card">
+                <div id="eachDay" class="card day">
                     <h4 id="theDate"></h4>
                     <span id="theIcon"></span>
                     <p>Temp: <span id="theTemp"></span></p>
@@ -78,7 +80,7 @@
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="eachDay" class="card">
+                <div id="eachDay" class="card day">
                     <h4 id="theDate"></h4>
                     <span id="theIcon"></span>
                     <p>Temp: <span id="theTemp"></span></p>
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="eachDay" class="card">
+                <div id="eachDay" class="card day">
                     <h4 id="theDate"></h4>
                     <span id="theIcon"></span>
                     <p>Temp: <span id="theTemp"></span></p>
@@ -94,7 +96,7 @@
                 </div>
             </div>
             <div class="col-md-2">
-                <div id="eachDay" class="card">
+                <div id="eachDay" class="card day">
                     <h4 id="theDate"></h4>
                     <span id="theIcon"></span>
                     <p>Temp: <span id="theTemp"></span></p>
@@ -121,6 +123,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+        integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+        crossorigin="anonymous"></script>
+    <script src="./Assets/JS/app.js"></script>
 </body>
 
 </html>
