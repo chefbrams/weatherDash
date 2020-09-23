@@ -8,3 +8,9 @@ color: snow;
 background-color: skyblue;
 border-width: 1px;
  } 
+
+ #date{
+     text-transform: capitalize
+     
+     ;
+ }
