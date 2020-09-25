@@ -16,6 +16,10 @@ dayFour.append(fourMorrow);
 let dayFive = $("#dayFive");
 var fiveMorrow = moment().add(5, 'day').format("L");
 dayFive.append(fiveMorrow);
+$("#currentConditions").hide();
+$("#cityList").hide();
+$("#headerForecast").hide();
+$("#fiveDay").hide();
 
 
 $("#searchBtn").on("click", cityInfo);
@@ -44,7 +48,9 @@ function cityInfo() {
             $("#date").append(wIcon);
             let uvLat = JSON.stringify(response.coord.lat);
             let uvLon = JSON.stringify(response.coord.lon);
-
+            $("#currentConditions").show();
+            $("#cityList").show();
+            $("#headerForecast").show();
 
             var uvUrl = "https://api.openweathermap.org/data/2.5/uvi?lat=" + uvLat + "&lon=" + uvLon + "&appid=703575c8b241108842bb5a5ed0aebafd&units=imperial";
             $.ajax({
@@ -89,7 +95,7 @@ function cityInfo() {
             let fiveIcon = ("<img src='http://openweathermap.org/img/w/" + response.list[5].weather[0].icon + ".png'>");
             $("#fiveIcon").append(fiveIcon);
 
-
+            $("#fiveDay").show();
 
 
 

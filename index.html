@@ -30,7 +30,7 @@
                             <button id="searchBtn" class="btn btn btn-primary fas fa-search"></button>
                             <button id="clearBtn" class="btn btn btn-primary fas fa-sync-alt"></button>
                         </li>
-                        <div class="card">
+                        <div class="card" id="cityList">
                             <ul class="list-group list-group-flush">
                                 <li class="list"></li>
                                 <li class="list"></li>
@@ -43,7 +43,7 @@
 
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 card">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 card" id="currentConditions">
 
                 <h4 class="city mt-4 ml-3" id="date">
 
@@ -55,11 +55,11 @@
             </main>
 
 
-            <div class="col-sm">
+            <div class="col-sm" id="headerForcast">
                 <h2>5-Day Forecast:</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="fiveDay">
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <div id="eachDay" class="card day">
