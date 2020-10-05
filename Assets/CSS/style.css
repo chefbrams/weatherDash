@@ -1,6 +1,7 @@
 h2 {
 text-align: center;
-
+font-family: 'Secular One', sans-serif;
+color: rgb(26, 126, 76);
 }
 
  .card{
@@ -13,4 +14,12 @@ border-width: 1px;
      text-transform: capitalize
      
      ;
+ }
+ body,html{
+     height: 100%;
+     width: 100%;
+     background-color: yellow;
+ }
+ .header{
+     color:pink;
  }
