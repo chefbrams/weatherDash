@@ -11,9 +11,9 @@ border-width: 1px;
  } 
 
  #date{
-     text-transform: capitalize
+     text-transform: capitalize;
      
-     ;
+     
  }
  body,html{
      height: 100%;
